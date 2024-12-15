@@ -96,8 +96,9 @@
     "network": {
         "format": "{ifname}",
         "format-wifi": "󰤨   {essid} {bandwidthTotalBytes}",
-        "format-ethernet": "󱓞 Ethernet {bandwidthTotalBytes}",
-        "format-disconnected": "󰤭 ",
+        //"format-ethernet": "󱓞 Ethernet {bandwidthTotalBytes}",
+        "format-ethernet": "󱓞 Eth",
+	"format-disconnected": "󰤭 ",
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "󰤢   Signal Strength:  {signalStrength}%",
         "tooltip-format-ethernet": "󰊗   Signal Strength:  {signalStrength}%",

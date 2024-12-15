@@ -22,6 +22,7 @@ tooltip {
 #cpu,
 #custom-swaync,
 #memory,
+#temperature,
 #network,
 #pulseaudio,
 #tray,
@@ -90,7 +91,8 @@ tooltip {
 }
 
 #cpu,
-#memory {
+#memory, 
+#temperature {
   color: @color1;
 }
 
@@ -101,6 +103,11 @@ tooltip {
 }
 
 #memory {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#temperature {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
