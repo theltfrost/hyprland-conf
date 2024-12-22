@@ -10,8 +10,8 @@
         "hyprland/workspaces",
         "cpu",
         "memory",
-        "mpris",
-	"temperature"
+      	"temperature",
+        "mpris"
     ],
     "modules-center": [
     ],
@@ -50,7 +50,8 @@
     "temperature": {
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+	"hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
     },
     "mpris": {
         "format": "{player_icon} {title} | {artist} - {length}",
@@ -71,7 +72,8 @@
     "clock": {
         "format": "󰥔 {:%R  󰃭 %A %d}",
         "on-click": "eww open Calendar --toggle --config ~/.config/eww/applets/",
-        "tooltip-format": "{:%A %d %B %Y}"
+        //"tooltip-format": "{:%A %d %B %Y}"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"	
     },
     "custom/swaync": {
         "tooltip": false,
