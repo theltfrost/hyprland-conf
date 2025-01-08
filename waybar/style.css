@@ -7,7 +7,8 @@
 
 window#waybar {
   background: @base;
-  color: @color8;
+  color: @color7;
+  background-color: transparent;
 }
 
 tooltip {
@@ -29,7 +30,8 @@ tooltip {
 #clock,
 #window,
 #mpris,
-#workspaces {
+#workspaces,
+#language {
   background: @crust;
   border-radius: 8px;
   border: 1px solid @crust;
@@ -92,7 +94,8 @@ tooltip {
 
 #cpu,
 #memory, 
-#temperature {
+#temperature,
+#language{
   color: @color1;
 }
 
@@ -118,6 +121,13 @@ tooltip {
   */
   }
 
+#language {
+  /*border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  */
+  }
+
+
 
 #mpris {
   color: @color7;
@@ -142,6 +152,12 @@ tooltip {
   color: @color3;
   margin-right: 10px;
 }
+
+#language {
+  color: @color3;
+  margin-right: 10px;
+}
+
 
 #pulseaudio {
   border-left: 0px;

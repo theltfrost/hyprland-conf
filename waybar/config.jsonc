@@ -16,7 +16,8 @@
     "modules-center": [
     ],
     "modules-right": [
-        "tray",
+	"hyprland/language",
+    	"tray",
         "network",
         "pulseaudio",
         "clock",
@@ -38,6 +39,13 @@
             "*": 5
         }
     },
+    
+    "hyprland/language": {
+	    "format": "{}",
+	    "format-ru": "RU",
+	    "format-en": "US"
+    },
+
     "cpu": {
         "interval": 5,
         "format": " {usage}%",
@@ -65,7 +73,7 @@
         "ignored-players": ["firefox", "chromium", "brave"]
     },
     "tray": {
-        "icon-size": 15,
+        "icon-size": 16,
         "tooltip": false,
         "spacing": 10
     },
